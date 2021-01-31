@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Task 1 - Solution and steps are mentioned below:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Steps to follow
 
-## Available Scripts
+1. You would need to first install the `node_modules` by running the following command:
+### `yarn install`
 
-In the project directory, you can run:
-
+2. Once the `node_modules` are install you can run the following command:
 ### `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Demo video is present in the following link:
 
-### `yarn test`
+Open [https://www.loom.com/share/da433bca96624d8ebd48adacaf2bc70c](Video Link) here.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+# Task 2 - My proposed solution to the requirment:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To handle the user requirment of downloading the image, we could always go with an approach to convert HTML tag to a canvas element which could easily be exported as PNG or JPEG format. For example here are the following steps which could be taken:
+ 
+ 1. The code for task 1 has a container component which shows the Graph as well as the prices selected ( MEAN, HIGH, LOW etc). It is wrapped inside a container on a seperate row.
+ 2. Get the `innerHTML` of the component and put it inside the canvas. 
+ 3. use the canvas element to export image as PNG and JPEG.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ Other Alternates could be:
+ 1. Use `html2canvas` JavaScript library to extract out the HTML and export it as PNG or JPEG.
+ 2. Use `Puppeteer` ( Headless chrome ) to extract out the HTML and export is as an image or JPEG.

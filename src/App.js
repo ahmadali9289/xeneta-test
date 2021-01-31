@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import "./App.css";
 import MultiLinePriceChart from "./components/MultiLinePriceChart";
 import SelectOriginDestinationPorts from "./components/SelectOriginDestinationPorts";
@@ -54,6 +54,10 @@ function App() {
 
   return (
     <Container>
+      <Row className="my-3">
+        <h3 className="text-center">Xeneta Coding Challenge - port search task</h3>
+      </Row>
+      <hr />
       <SelectOriginDestinationPorts
         originPorts={originPorts}
         destinationPorts={destinationPorts}
