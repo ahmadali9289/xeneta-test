@@ -5,7 +5,9 @@
 1. You would need to first install the `node_modules` by running the following command:
 ### `yarn install`
 
-2. Once the `node_modules` are install you can run the following command:
+2. Create a `.env` file at the root level and add the line `API_KEY:"zSTAhrBZFU19GlvU9DzFUarK0gfW7Tx85rsyaVxV"`.
+
+3. Once the `node_modules` are install you can run the following command. 
 ### `yarn start`
 
 Runs the app in the development mode.\
