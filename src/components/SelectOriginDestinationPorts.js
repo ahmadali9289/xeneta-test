@@ -14,7 +14,7 @@ const SelectOriginDestinationPorts = (props) => {
             />
           </Col>
           <Col>
-            <label>Select Origin</label>
+            <label>Select Destination</label>
             <Select
               options={props.destinationPorts}
               onChange={(e) => props.onPortSelectionHandler(e, false)}
