@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_KEY = "zSTAhrBZFU19GlvU9DzFUarK0gfW7Tx85rsyaVxV";
+const API_KEY = process.env.API_KEY || "zSTAhrBZFU19GlvU9DzFUarK0gfW7Tx85rsyaVxV";
 const ports_url = "https://685rp9jkj1.execute-api.eu-west-1.amazonaws.com/prod/ports";
 const prices_url = "https://685rp9jkj1.execute-api.eu-west-1.amazonaws.com/prod/rates";
 
